@@ -1,3 +1,5 @@
+import time
+import datetime
 class IOTInternal(object):
   def __init__(self, internal):
     self.internal = internal
@@ -25,7 +27,8 @@ class IOTDataEntries(object):
     Y = []
     for x in self.data:
       Y.append(x["value"])
-      X.append(x["created_at"])
+      t = time.mktime(datetime.datetime.strptime(x['created_at'], "%Y-%m-%dT%H:%M:%S.%fZ").timetuple())
+      X.append(t)
     return {"X" : X, "Y" : Y}
 
   def get_unit(self):
