@@ -18,7 +18,7 @@ setup(
   name = 'iotdatalog',
   packages = ['iotdatalog'],
   version = '0.1',
-  license='GPLv3',
+  license='GPL',
   description = 'Wrapper for datalog.anglebrackets.co.za REST API',
   author = 'Ruan Luies',
   author_email = 'omega@live.co.za',
@@ -32,6 +32,5 @@ setup(
     'Development Status :: 3 - Alpha',
     'Intended Audience :: Developers',
     'Topic :: Software Development :: Build Tools',
-    'License :: OSI Approved :: GPLv3',
   ],
 )
