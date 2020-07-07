@@ -26,7 +26,7 @@ setup(
   download_url = 'https://github.com/baggins800/iotdatalog/archive/iotdatalog-0.1.tar.gz',
   keywords = ['IOT', 'datalogging', 'datalog', 'datalogger'],
   install_requires=[  
-    'requests>=1.6', 'responses', 'time', 'datetime'
+    'requests>=1.6', 'responses', 'datetime'
   ],
   classifiers=[
     'Development Status :: 3 - Alpha',
