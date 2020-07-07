@@ -23,7 +23,7 @@ setup(
   author = 'Ruan Luies',
   author_email = 'omega@live.co.za',
   url = 'https://github.com/baggins800/iotdatalog',
-  download_url = 'https://github.com/baggins800/iotdatalog/archive/v_01.tar.gz',
+  download_url = 'https://github.com/baggins800/iotdatalog/archive/iotdatalog-0.1.tar.gz',
   keywords = ['IOT', 'datalogging', 'datalog', 'datalogger'],
   install_requires=[  
     'requests>=1.6', 'responses'
