@@ -17,7 +17,7 @@ def read(fname):
 setup(
   name = 'iotdatalog',
   packages = ['iotdatalog'],
-  version = '0.1',
+  version = '0.1.3',
   license='GPL',
   description = 'Wrapper for datalog.anglebrackets.co.za REST API',
   author = 'Ruan Luies',

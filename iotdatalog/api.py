@@ -1,5 +1,5 @@
 import requests
-from models import IOTDevice, IOTDataField, IOTDataEntries
+from iotdatalog.models import IOTDevice, IOTDataField, IOTDataEntries
 
 class Api(object):
   def __init__(self, key, https=True):
