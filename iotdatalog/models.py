@@ -19,7 +19,6 @@ class IOTDataEntries(object):
   def __init__(self, data, device, field):
     self.data = data
     self.field = field
-    print (field)
     self.device = device
   def get_data(self):
     X = []
