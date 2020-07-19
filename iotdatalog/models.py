@@ -25,11 +25,13 @@ class IOTDataEntries(object):
   def get_data(self):
     X = []
     Y = []
+    T = []
     for x in self.data:
       Y.append(x["value"])
+      X.append(x["independent"])
       t = time.mktime(datetime.datetime.strptime(x['created_at'], "%Y-%m-%dT%H:%M:%S.%fZ").timetuple())
-      X.append(t)
-    return {"X" : X, "Y" : Y}
+      T.append(t)
+    return {"X" : X, "Y" : Y, "T" : T}
 
   def get_unit(self):
     return self.field.get_unit();
