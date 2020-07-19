@@ -26,8 +26,9 @@ setup(
   author_email = 'omega@live.co.za',
   url = 'https://github.com/baggins800/iotdatalog',
   keywords = ['IOT', 'datalogging', 'datalog', 'datalogger'],
+  setup_requires=['setuptools-git-version'],
   install_requires=[  
-    'requests>=1.6', 'responses', 'datetime', 'setuptools-git-version'
+    'requests>=1.6', 'responses', 'datetime'
   ],
   classifiers=[
     'Development Status :: 3 - Alpha',
