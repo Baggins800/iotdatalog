@@ -3,6 +3,8 @@ import sys
 
 try:
     from setuptools import setup
+    from version import get_git_version
+
 except ImportError:
     from distutils.core import setup
 
@@ -17,7 +19,7 @@ def read(fname):
 setup(
   name = 'iotdatalog',
   packages = ['iotdatalog'],
-  version = '0.1.5',
+  version = get_git_version(),
   license='GPL',
   description = 'Wrapper for datalog.anglebrackets.co.za REST API',
   author = 'Ruan Luies',
