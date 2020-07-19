@@ -19,7 +19,7 @@ def read(fname):
 setup(
   name = 'iotdatalog',
   packages = ['iotdatalog'],
-  version = get_git_version(),
+  version_format='{tag}',
   license='GPL',
   description = 'Wrapper for datalog.anglebrackets.co.za REST API',
   author = 'Ruan Luies',
@@ -27,7 +27,7 @@ setup(
   url = 'https://github.com/baggins800/iotdatalog',
   keywords = ['IOT', 'datalogging', 'datalog', 'datalogger'],
   install_requires=[  
-    'requests>=1.6', 'responses', 'datetime'
+    'requests>=1.6', 'responses', 'datetime', 'setuptools-git-version'
   ],
   classifiers=[
     'Development Status :: 3 - Alpha',
